@@ -6,40 +6,141 @@
     font-family: Arial;
     text-decoration: none;
 }
+/* Início cabeçalho */
+header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #000;
+}
+header h1{
+    color: #fff;
+    text-align: center;
+}
+/* Final do cabeçalho */
+
 
 body{
     background-color: #f7f4eb;
 }
 
 .container{
-    width: 80%;
+    width: 95%;
     margin: auto;
     gap: 20px;
     display: grid;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     grid-template-areas: "aside main main";
 
 }
 
+/* Início do main */
 .container main{
-    grid-area: main
+    grid-area: main;
 }
 .container main .conteudo-main h1{
     font-size: 2rem;
     text-align: center;
     margin-bottom: 50px;
 }
-.container main .conteudo-main .produto01 .num-pedidos span{
-    display: flex;
+
+/* Início do primeiro produto */
+.container main .conteudo-main .produto01{
+    margin-bottom: 20px;
+    box-shadow: 0.2px 0.2px 3px #000;
 }
+.container main .conteudo-main .produto01 .num-pedido01{
+    padding: 10px;
+    background-color: #fff;
+}
+.container main .conteudo-main .produto01 .num-pedido01 span{
+    display: flex;
+    margin-bottom: 10px;
+}
+.container main .conteudo-main .produto01 .num-pedido01 span .produto{
+    margin-right: 100px;
+    font-size: 18px;
+}
+.container main .conteudo-main .produto01 .img-produto-descricao{
+    display: flex;
+    align-items: center;
+}
+.container main .conteudo-main .produto01 .img-produto-descricao .img-produto01{
+    margin-right: 20px;
+}
+.container main .conteudo-main .produto01 .img-produto-descricao .img-produto01 img{
+    width: 150px;
+}
+.container main .conteudo-main .produto01 .img-produto-descricao .descricao-valor h3{
+    margin-bottom: 20px;
+}
+.container main .conteudo-main .produto01 .img-produto-descricao .descricao-valor p{
+    display: flex;
+    align-items: center;
+}
+.container main .conteudo-main .produto01 .img-produto-descricao .descricao-valor p strong{
+    margin-right: 5px;
+}
+.container main .conteudo-main .produto01 .img-produto-descricao .descricao-valor p span{
+    font-size: 30px;
+}
+/* Fim do primeiro produto */
+
+/* Início do segundo produto */
+.container main .conteudo-main .produto02{
+    box-shadow: 0.2px 0.2px 3px #000;
+}
+.container main .conteudo-main .produto02 .num-pedido02{
+    padding: 10px;
+    background-color: #fff;
+}
+.container main .conteudo-main .produto02 .num-pedido02 span{
+    display: flex;
+    margin-bottom: 10px;
+}
+.container main .conteudo-main .produto02 .num-pedido02 span .produto{
+    margin-right: 100px;
+    font-size: 18px;
+}
+.container main .conteudo-main .produto02 .img-produto-descricao{
+    display: flex;
+    align-items: center;
+}
+.container main .conteudo-main .produto02 .img-produto-descricao .img-produto02{
+    margin-right: 20px;
+}
+.container main .conteudo-main .produto02 .img-produto-descricao .img-produto02 img{
+    width: 150px;
+}
+.container main .conteudo-main .produto02 .img-produto-descricao .descricao-valor h3{
+    margin-bottom: 20px;
+}
+.container main .conteudo-main .produto02 .img-produto-descricao .descricao-valor p{
+    display: flex;
+    align-items: center;
+}
+.container main .conteudo-main .produto02 .img-produto-descricao .descricao-valor p strong{
+    margin-right: 5px;
+}
+.container main .conteudo-main .produto02 .img-produto-descricao .descricao-valor p span{
+    font-size: 30px;
+}
+/* Fim do segundo produto */
+
+
+.container main .conteudo-main .dadospessoais{
+    padding-top: 30px;
+}
+.container main .conteudo-main .dadospessoais h2{
+    text-align: center;
+}
+/* Fim do main */
 
 
 
 
 
-
-
+/* Início Aside */
 .container aside{
     grid-area: aside;
 }
@@ -85,17 +186,9 @@ body{
     align-items: center;
     margin-right: 40px;
 }
-header{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #000;
-}
-header h1{
-    color: #fff;
-    text-align: center;
-}
+/* Final Aside */
 
-
+/* Início do rodapé */
 footer{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -105,3 +198,4 @@ footer p{
     color: #fff;
     text-align: center;
 }
+/* Dim do rodapé */
