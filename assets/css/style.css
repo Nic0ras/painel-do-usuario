@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: lato;
+    font-family: Arial;
     text-decoration: none;
 }
 /* Início cabeçalho */
@@ -39,7 +39,7 @@ body{
     grid-area: main;
 }
 .container main .conteudo-main h1{
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -127,13 +127,42 @@ body{
 }
 /* Fim do segundo produto */
 
-
+/* Início dos dados pessoais */
 .container main .conteudo-main .dadospessoais{
-    padding-top: 30px;
+    padding: 10px;
+    margin-top: 50px;
+    background-color: #fff;
+    box-shadow: 0.2px 0.2px 3px #000;
 }
 .container main .conteudo-main .dadospessoais h2{
+    font-size: 1.5rem;
     text-align: center;
+    margin-bottom: 30px;
 }
+.container main .conteudo-main .dadospessoais .dados{
+    display: flex;
+}
+.container main .conteudo-main .dadospessoais .dados .nome-email-cpf{
+    margin-right: 200px;
+}
+.container main .conteudo-main .dadospessoais .dados .nome-email-cpf .nome{
+    margin-bottom: 20px;
+}
+.container main .conteudo-main .dadospessoais .dados .nome-email-cpf .email{
+    margin-bottom: 20px;
+}
+
+.container main .conteudo-main .dadospessoais .dados .data-telefone-endereco .data{
+    margin-bottom: 20px;
+}
+.container main .conteudo-main .dadospessoais .dados .data-telefone-endereco .telefone{
+    margin-bottom: 20px;
+}
+.container main .conteudo-main .dadospessoais .dados .descri-dados{
+    font-size: 18px;
+}
+
+/* Fim dos dados pessoais */
 /* Fim do main */
 
 
