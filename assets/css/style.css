@@ -8,6 +8,7 @@
 }
 /* Início cabeçalho */
 header{
+    width: 100%;
     padding-top: 0.625rem;
     padding-bottom: 0.625rem;
     background-color: #000;
@@ -38,10 +39,14 @@ body{
 .container main{
     grid-area: main;
 }
-.container main .conteudo-main h1{
+
+body .painel-usuario{
+    width: 100%;
+}
+body .painel-usuario h1{
     font-size: 1.5rem;
     text-align: center;
-    margin-bottom: 3.125rem;
+    padding-top: 30px;
 }
 
 /* Início do primeiro produto */
@@ -140,9 +145,13 @@ body{
     margin-bottom: 1.875rem;
 }
 .container main .conteudo-main .dadospessoais .dados{
-    display: flex;
+    display: grid;
+    margin-bottom: 1.25rem ;
+    grid-template-areas: "nome-email-cpf data-telefone-endereco";
+    
 }
 .container main .conteudo-main .dadospessoais .dados .nome-email-cpf{
+    grid-area: nome-email-cpf;
     margin-right: 12.5rem;
 }
 .container main .conteudo-main .dadospessoais .dados .nome-email-cpf .nome{
@@ -152,6 +161,10 @@ body{
     margin-bottom: 1.25rem;
 }
 
+
+.container main .conteudo-main .dadospessoais .dados .data-telefone-endereco{
+    grid-area: data-telefone-endereco;
+}
 .container main .conteudo-main .dadospessoais .dados .data-telefone-endereco .data{
     margin-bottom: 1.25rem;
 }
@@ -162,8 +175,21 @@ body{
     font-size: 1.125rem;
 }
 
-.container main .conteudo-main .dadospessoais input {
-    
+.container main .conteudo-main .dadospessoais .data-telefone-endereco .botao {
+    width:200px;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    margin-top: 1.25rem;
+    border-radius: 9px;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    box-shadow: 0.25px 0.25px 2px #000;
+    background-color: #4e6022;
+}
+.container main .conteudo-main .dadospessoais .data-telefone-endereco .botao:hover{
+    color: #4e6022;
+    background-color: #aaa;
 }
 
 /* Fim dos dados pessoais */
@@ -223,6 +249,7 @@ body{
 
 /* Início do rodapé */
 footer{
+    width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #000;
@@ -232,3 +259,19 @@ footer p{
     text-align: center;
 }
 /* Dim do rodapé */
+
+/* TRABALHANDO RESPONSIVIDADE */
+@media(max-width: 1133px){
+    .container{
+        grid-template-areas: "aside ." "main main";
+    }
+    .container aside{
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 772px){
+    .container main .conteudo-main .dadospessoais .dados{
+        grid-template-areas: "nome-email-cpf" "data-telefone-endereco";
+    }
+}
